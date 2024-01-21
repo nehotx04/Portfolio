@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.elemento-navbar{
+  color:white;
+}
+
+.navbg{
+  z-index:100;
+}
+
+.elemento-navbar.activo{
+  color: #A6E1FA;
+  border-radius: 0;
+  border-bottom:2px solid #ffffff;
+  z-index:999999;
+}
+
+.point{
+  border-radius: 100%;
+  background:#A6E1FA;
+  padding:10%;
+}
+
+.bg-sky{
+  background:#A6E1FA;
+}
+
+.text-sky{
+  color: #A6E1FA;
+}
+
+.headerimg{
+  height:50em;
+  width:100%;
+}
+
+.headerimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-bg{
+  background:#252433;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index:9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*animations */
+
+.rotator:hover{
+  transform:rotate(360deg);
+  transition: all .8s;
+}
+
+.shaker:hover{
+  animation: shaker 1s ease-in-out 0s 1 reverse none;
+}
+
+@keyframes shaker {
+  0%,
+  100% {
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+  }
+
+  10% {
+	transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+	transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+	transform: rotate(10deg);
+  }
+
+  80% {
+	transform: rotate(-8deg);
+  }
+
+  90% {
+	transform: rotate(8deg);
+  }
+}
+
+/*animations*/

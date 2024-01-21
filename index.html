@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nehomar Romero - Personal portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body class="bg-gray-700">
+
+  <div class="flex flex-row gap-2 loader-bg">
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce"></div>
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.3s]"></div>
+    <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
+  </div>
+
+  <nav class="bg-gray-800 navbg fixed top-0 left-0 right-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <div class="hidden md:block point"></div>
+            <span class="self-center hidden md:block  text-2xl font-semibold whitespace-nowrap dark:text-white">Nehotx</span>
+          </a>
+        </div>
+        <div id="menu" class="hidden md:block">
+          <div class="md:ml-10 flex items-baseline space-x-4">
+            <a href="#homepage"
+              class="text-gray-300 hover:text-white md:px-3 py-2 rounded-md text-sm font-medium elemento-navbar"><i
+                class="fa-solid fa-house"></i> Homepage</a>
+            <a href="#skills"
+              class="text-gray-300 hover:text-white md:px-3 py-2 rounded-md text-sm font-medium elemento-navbar"><i
+                class="fa-solid fa-code"></i> My service</a>
+            <a href="#portfolio"
+              class="text-gray-300 hover:text-white md:px-3 py-2 rounded-md text-sm font-medium elemento-navbar"><i
+                class="fa-solid fa-briefcase"></i> Portfolio</a>
+            <a href="#contact" title="Contact"
+              class="text-gray-300 hover:text-white md:px-3 py-2 rounded-md text-sm font-medium elemento-navbar"><i
+                class="fa-solid fa-id-card"></i></a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-toggle" type="button"
+            class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="relative" id="homepage">
+    <img src="img/header.jpg" alt="Imagen" class="w-full">
+    <div>
+      <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+      </div>
+    </div>
+    <div
+      class="absolute top-1/2 left-1/2 w-full bg-black bg-opacity-25 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold text-center">
+
+      <span class="sm:text-5xl xl:text-6xl">HI, I AM NEHOMAR ROMERO</span><br>
+      <span class="sm:text-xl xl:text-4xl">A PROFESSIONAL <span class="sm:text-xl xl:text-4xl text-blue-400"
+          id="typed-text"></span></span>
+    </div>
+  </div>
+
+
+  <div id="skills">
+    <div class="mb-5 text-center">
+      <h1 class="bg-gray-800 rounded-b-lg pb-2 text-center text-white text-5xl">My services</h1>
+      <p class="text-white text-xl my-5">The services that I offer I have been working on them throughout my experience and are
+        the following:</p>
+    </div>
+    <div class="m-5 flex flex-row flex-wrap justify-around">
+      <div
+        class="relative mb-5 group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-56 w-56  rounded-2xl hover:duration-700 duration-700">
+        <div class="w-56 h-72 bg-gray-800 text-white p-5 flex align-center justify-center">
+          <div class="flex flex-row justify-between">
+            <span class="text-6xl mt-10">
+              <i class="fa-brands fa-html5"></i>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute bg-gray-900 -bottom-24 w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span class="text-white text-xl mb-4 font-bold text-center">Frontend skills</span>
+          <p class="text-white text-center"> HTML, CSS, Javascript, Jquery, TailwindCss, Bootstrap, Jinja2, Blade</p>
+        </div>
+
+      </div>
+
+
+      <div
+        class="relative mb-5 group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-56 w-56  rounded-2xl hover:duration-700 duration-700">
+        <div class="w-56 h-72 bg-gray-800 text-white p-5 flex align-center justify-center">
+          <div class="flex flex-row justify-between">
+            <span class="text-6xl mt-10">
+              <i class="fa-solid fa-database"></i>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute bg-gray-900 -bottom-24 w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span class="text-white text-xl mb-4 font-bold text-center">Backend skills</span>
+          <p class="text-white text-center"> Laravel, Flask, Python, PHP, Mysql, SQL, PostgreSQL, MongoDb</p>
+        </div>
+
+      </div>
+
+      <div
+        class="relative mb-5 group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-56 w-56  rounded-2xl hover:duration-700 duration-700">
+        <div class="w-56 h-72 bg-gray-800 text-white p-5 flex align-center justify-center">
+          <div class="flex flex-row justify-between">
+            <span class="text-6xl mt-10">
+              <i class="fa-solid fa-list-check"></i>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute bg-gray-900 -bottom-24 w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span class="text-white text-xl mb-5 font-bold text-center">Work methodologies</span>
+          <p class="text-white text-center mb-5"> Agile, Scrum, Kanban, Scrumban</p>
+        </div>
+
+      </div>
+
+      <div
+        class="relative mb-5 group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-56 w-56  rounded-2xl hover:duration-700 duration-700">
+        <div class="w-56 h-72 bg-gray-800 text-white p-5 flex align-center justify-center">
+          <div class="flex flex-row justify-between">
+            <span class="text-6xl mt-10">
+              <i class="fa-brands fa-laravel"></i>
+            </span>
+          </div>
+        </div>
+        <div
+          class="absolute bg-gray-900 -bottom-24 w-56 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span class="text-white text-xl mb-2 font-bold text-center">Laravel Experienced</span>
+          <p class="text-white text-center mb-2">70% of my jobs are in Laravel, which is why I have become an expert in
+            the field</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="Services">
+    <div class="relative mt-10" id="homepage">
+      <div class="h-80 md:h-full md:h-96 w-full">
+        <img src="img/banner.jpg" alt="Imagen" class="hidden md:block md:w-full md:h-full object-cover">
+        <img src="img/bannersm.jpg" class="md:hidden block w-full h-full object-cover" alt="Img">
+      </div>
+      <div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center">
+        </div>
+      </div>
+
+      <div
+        class="my-10 absolute flex flex-row flex-wrap justify-around align-center top-1/2 left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold text-center">
+
+        <div>
+          <div
+            class="rounded-lg md:rounded-full m-2 md:py-10 bg-gradient-to-t from-teal-700 via-teal-400 to-teal-300 text-2xl md:text-4xl text-center ease-in-out duration-300 hover:scale-110">
+            <span class="text-white"><i class="fa-solid fa-bars-progress rotator"></i></span>
+          </div>
+
+          <div class="my-2">
+            <span class="text-2xl md:text-4xl">4</span>
+          </div>
+
+          <div>
+            <span class="text-sm">PROYECTS FINISHED</span>
+          </div>
+
+
+
+        </div>
+
+        <div>
+          <div
+            class="rounded-lg md:rounded-full m-2 md:py-10 bg-gradient-to-t from-teal-700 via-teal-400 to-teal-300 text-2xl md:text-4xl text-center ease-in-out duration-300 hover:scale-110">
+            <span class="text-white mx-10"><i class="fa-solid fa-users shaker"></i></span>
+          </div>
+
+          <div class="my-2">
+            <span class="text-2xl md:text-4xl">1</span>
+          </div>
+
+          <div>
+            <span class="text-sm">WORK COMPANIES</span>
+          </div>
+
+        </div>
+
+        <div>
+          <div
+            class="rounded-lg md:rounded-full m-2 md:py-10 bg-gradient-to-t from-teal-700 via-teal-400 to-teal-300 text-2xl md:text-4xl text-center ease-in-out duration-300 hover:scale-110">
+            <span class="text-white mx-10"><i class="fa-regular fa-clock rotator"></i></span>
+          </div>
+
+          <div class="my-2">
+            <span class="text-2xl md:text-4xl">15k+</span>
+          </div>
+
+          <div>
+            <span class="text-sm">CODING HOURS</span>
+          </div>
+
+        </div>
+
+        <div>
+          <div
+            class="rounded-lg md:rounded-full m-2 md:py-10 bg-gradient-to-t from-teal-700 via-teal-400 to-teal-300 text-2xl md:text-4xl text-center ease-in-out duration-300 hover:scale-110">
+            <span class="text-white"><i class="fa-solid fa-bug shaker mx-10"></i></i></span>
+          </div>
+
+          <div class="my-2">
+            <span class="text-2xl md:text-4xl">250+</span>
+          </div>
+
+          <div>
+            <span class="text-sm">FIXED BUGS</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="portfolio" class="bg-gray-800 text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">MY PORTFOLIO</h2>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1">
+
+        <div class="bg-cover bg-center block rounded-xl border border-gray-800 shadow-xl transition hover:border-teal-500/50 hover:shadow-teal-600/50"
+         style="background-image: url('img/wkpoint.png');">
+          <div class="h-full w-full bg-gray-900 bg-opacity-75 p-8 rounded-lg">
+
+          
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-500" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path
+              d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+
+
+          <h2 class="mt-4 text-xl font-bold text-white">WKpoint</h2>
+
+          <p class="mt-1 text-lg text-gray-300">
+            This application developed in Laravel was designed with the purpose of helping students from Argentina to get job opportunities to gain experience while studying.
+          </p>
+        </div>
+        </div>
+
+        <div class="bg-cover bg-center block rounded-xl border border-gray-800 shadow-xl transition hover:border-teal-500/50 hover:shadow-teal-600/50"
+         style="background-image: url('img/cerrobayo.png');">
+          <div class="h-full w-full bg-gray-900 bg-opacity-75 p-8 rounded-lg">
+
+          
+            <i class="fa-solid fa-person-snowboarding text-teal-500 text-4xl"></i>
+
+
+          <h2 class="mt-4 text-xl font-bold text-white">Cerrobayo</h2>
+
+          <p class="mt-1 text-lg text-gray-300">
+            In this application, I helped with my work team to solve the problems that the client had and we also implemented new functions that the client requested.
+          </p>
+        </div>
+        </div>
+
+        <div class="bg-cover bg-center block rounded-xl border border-gray-800 shadow-xl transition hover:border-teal-500/50 hover:shadow-teal-600/50"
+       style="background-image: url('img/Eshop.png');">
+        <div class="h-full w-full bg-gray-900 bg-opacity-75 p-8 rounded-lg">
+
+          <i class="fa-solid fa-cart-shopping text-teal-500 text-4xl"></i>
+
+
+        <h2 class="mt-4 text-xl font-bold text-white">Yuppy E-world</h2>
+
+        <p class="mt-1 text-lg text-gray-300">
+          This application is an online catalog that I designed to put into practice the knowledge that I acquired studying python and flask with sqlalchemy.
+        </p>
+      </div>
+      </div>
+
+      <div class="bg-cover bg-center block rounded-xl border border-gray-800 shadow-xl transition hover:border-teal-500/50 hover:shadow-teal-600/50"
+       style="background-image: url('img/privblog.png');">
+        <div class="h-full w-full bg-gray-900 bg-opacity-75 p-8 rounded-lg">
+
+          <i class="fa-solid fa-network-wired text-teal-500 text-4xl"></i>
+
+        <h2 class="mt-4 text-xl font-bold text-white">PrivBlog</h2>
+
+        <p class="mt-1 text-lg text-gray-300">
+          A small social network created as a personal project to deepen my knowledge and put it into practice to face situations that would occur in different projects.
+        </p>
+      </div>
+      </div>
+
+      
+    </div>
+    
+    <div class="bg-gray-800 text-white text-center">
+      <h1 class="text-3xl my-4 font-bold text-teal-400">DON'T REPEAT YOURSELF</h1>
+      <p class=" text-xl">"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system"</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="text-gray-400 bg-gray-900">
+    <div class="container px-4 py-12 mx-auto flex justify-center">
+      <div>
+        <span class="text-lg md:text-xl text-white">Nehotx04@gmail.com</span>
+        <br class="">
+        <a title="Send mail" href="mailto:nehotx04@gmail.com" class=" rounded-full py-2 px-3 mx-2 text-white bg-teal-500 hover:bg-teal-600 "><i class="fa-regular fa-paper-plane"></i></a>
+        <button title="Copy mail" onclick="copyToClipboard('nehotx04@gmail.com')" class="text-white hover:text-gray-400 bg-teal-500 hover:bg-teal-600 rounded-full py-2 px-3 mx-2"><i class="fa-regular fa-clone"></i></button>
+        <a href="cv.pdf" target="_blank" title="CV" class="rounded-full px-3 mx-2 py-2 text-white bg-teal-500 hover:bg-teal-600"><i class="fa-solid fa-file-pdf"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+  <script src="https://kit.fontawesome.com/d76d9d2ca0.js" crossorigin="anonymous"></script>
+
+  <script>
+    window.onload = function () {
+      // Ocultar la pantalla de carga
+      document.querySelector('.loader-bg').style.display = 'none';
+    };
+
+    // Obtén todos los elementos del navbar
+    const elementosNavbar = document.querySelectorAll('.elemento-navbar');
+
+    // Agrega un evento de clic a cada elemento del navbar
+    elementosNavbar.forEach(elemento => {
+      elemento.addEventListener('click', () => {
+        // Remueve la clase 'activo' de todos los elementos del navbar
+        elementosNavbar.forEach(el => el.classList.remove('activo'));
+
+        // Agrega la clase 'activo' al elemento clickeado
+        elemento.classList.add('activo');
+      });
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+
+    var typed = new Typed('#typed-text', {
+      strings: ['BACKEND DEVELOPER', 'WEB DEVELOPER'],
+      typeSpeed: 30,
+      backSpeed: 30,
+      loop: true
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(function() {
+          alert('Mail copied to clipboard');
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+        });
+    }
+
+  </script>
+</body>
+
+</html>
